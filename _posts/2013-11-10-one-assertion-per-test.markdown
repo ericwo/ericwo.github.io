@@ -15,7 +15,7 @@ def create
     flash[:success] = "Thanks for registering Myblog, please sign in."
     redirect_to sign_in_path
   else
-    flash[:error] = "Please check your input!"
+    flash[:error] = "Please check your input."
     render :new
   end
 end
@@ -26,15 +26,39 @@ end
 {% highlight ruby %}
 describe "POST create" do
   context "with valid input" do
-    it "creates a user"
-    it "redirects to the sign in page"
-    it "show the sucess message"
+    before do
+      post :create, user: { email: "eric@example.com", password: "password", full_name: "Eric Wu" }
+    end
+
+    it "creates a user" do
+      expect(User.count).to eq(1)
+    end
+
+    it "redirects to the sign in page" do
+      expect(response).to redirect_to sign_in_path
+    end
+
+    it "show the sucess message" do
+      expect(flash[:success]).to eq("Thanks for registering Myblog, please sign in.")
+    end
   end
 
   context "with invalid input" do
-    it "does not create a user"
-    it "redirects to the :new template"
-    it "show the error message"
+    before do
+      post :create, user: { email: "eric@example.com" }
+    end
+
+    it "does not create a user" do
+      expect(User.count).to eq(0)
+    end
+
+    it "redirects to the :new template" do
+      expect(response).to render :new
+    end
+
+    it "show the error message" do
+      expect(flash[:error]).to eq("Please check your input.")
+    end
   end
 end
 {% endhighlight %}
