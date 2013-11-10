@@ -27,7 +27,7 @@ end
 describe "POST create" do
   context "with valid input" do
     before do
-      post :create, user: { email: "eric@example.com", password: "password", full_name: "Eric Wu" }
+      post :create, user: { email: "eric@gmail.com", password: "123", name: "Eric Wu" }
     end
 
     it "creates a user" do
@@ -63,4 +63,4 @@ describe "POST create" do
 end
 {% endhighlight %}
 
-遵循 one assertion per test 能让你更清楚的写出unit test， 如果一个method你做了太多的事情，那么你就知道自己的设计是有问题的，迫使自己去重构代码，然后在测试中使用stub和mock。
+遵循 one assertion per test 的原则能让你更清楚的写出unit test， 如果一个method你做了太多的事情，那么你就知道自己的设计是有问题的，就需要重构代码了。
