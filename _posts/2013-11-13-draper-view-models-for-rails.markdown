@@ -52,7 +52,8 @@ end
 {% endhighlight %}
 
 Decorators 是一个非常好的地方去实现下面这些需求的地方：
-* 格式化复杂的日期显示
-* 定义常用对象的表述，比如有一个`name`方法，使用`first_name`和`last_name`这两个属性。
+
++  格式化复杂的日期显示
++  定义常用对象的表述，比如有一个`name`方法，使用`first_name`和`last_name`这两个属性。
 
 当你发现自己的view中有太多逻辑你可以首先考虑使用Decorator这个gem来重构。
