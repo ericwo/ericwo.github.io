@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "常用Vim操作和配置"
+date:   2013-11-24 22:30:00
+categories: jekyll update
+---
+
+如果你的工作语言是ruby, python, perl, c, shell等，你懂的，那么Vim真的是能给你的带来无穷的乐趣的，当然是在你学会怎么使用这个现在最流行的editor。
+
+
