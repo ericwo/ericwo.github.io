@@ -1,10 +1,28 @@
 ---
 layout: post
-title:  "常用Vim操作和配置"
+title:  "常用VIM操作和配置"
 date:   2013-11-24 22:30:00
 categories: jekyll update
 ---
 
-如果你的工作语言是ruby, python, perl, c, shell等，你懂的，那么Vim真的是能给你的带来无穷的乐趣的，当然是在你学会怎么使用这个现在最流行的editor。
+#### 关于VIM
+如果你的工作语言是ruby, python, perl, c, shell等，你懂的，那么VIM真的是能给你的带来无穷的乐趣的，当然是在你学会怎么使用这个现在最流行的文本编辑器。
+
+在Mac或者Linux下你可以下载GVIM，里面集成了一些操作，比如你可以用`Command + s`来保存，当然打开Terminal然后使用VIM是最方便的。
+
+#### 初级操作
+
+- `i`：Insert模式，按ESC回到Normal模式
+- `x`：删除当前光标所在的一个字符
+- `s`：删除当前光标所在的一个字符并且变成Insert模式
+- `:w`：保存
+- `:q`：退出
+- `hjkl`：光标上下左右的移动
+- `dd`：删除当前行(delete)
+- `yy`：复制当前行(copy)
+- `p`：粘贴最近剪贴板的内容(paste)
+
+
+
 
 
