@@ -25,7 +25,7 @@ Vundle是一款插件管理工具。
    call vundle#rc()
 
    " let Vundle manage Vundle
-   " required! 
+   " required!
    Bundle 'gmarik/vundle'
 
    " My bundles here:
@@ -46,12 +46,12 @@ Vundle是一款插件管理工具。
 
    filetype plugin indent on     " required!
    {% endhighlight %}
-   
+
 3. 安装插件
 
    `:BundleInstall`
 
-#### NERDTree 
+#### NERDTree
 
 NERDTree是Vim最常用的插件之一，如果你用惯了其他编辑器中显示目录和文件结构，那么[NerdTree](https://github.com/scrooloose/nerdtree)可以实现你需要的功能。
 
